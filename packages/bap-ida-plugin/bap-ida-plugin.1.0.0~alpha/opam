@@ -8,7 +8,12 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-ida-plugin"]
+  [
+    "./configure"
+    "--prefix=%{prefix}%"
+     "--ida-plugin-path=%{conf-ida:path}%"
+    "--enable-ida-plugin"
+  ]
   [make]
 ]
 install: [[make "install"]]
@@ -16,4 +21,4 @@ remove: [
         ["ocamlfind" "remove" "bap-plugin-emit_ida_script"]
         ["ocamlfind" "remove" "bap-plugin-ida-python"]
 ]
-depends: ["bap" "cmdliner"]
+depends: ["bap" "cmdliner" "conf-ida"]
