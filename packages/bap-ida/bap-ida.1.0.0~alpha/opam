@@ -11,8 +11,6 @@ build: [
   ["./configure"
      "--prefix=%{prefix}%"
      "--enable-ida"
-     "--ida-path=%{conf-ida:path}%"
-     "--ida-headless=%{conf-ida:headless}%"
 ]
   [make]
 ]
@@ -23,7 +21,6 @@ remove: [
         ["bapbundle" "remove" "ida.plugin"]
 ]
 depends: [
-         "conf-ida"
          "core_kernel"       {>= "113.24.00"}
          "oasis"             {build & >= "0.4.0"}
          "ppx_jane"          {>= "113.24.01"}
