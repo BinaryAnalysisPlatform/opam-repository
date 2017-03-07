@@ -26,5 +26,5 @@ depends: [
     "bap-abi"
     "bap-c"
     "bap-llvm"
-    "cmdliner"
+    "cmdliner"        {= "0.9.8"}
 ]

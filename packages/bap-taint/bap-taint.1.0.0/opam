@@ -14,4 +14,7 @@ build: [
 install: [[make "install"]]
 remove: [["ocamlfind" "remove" "bap-plugin-taint"]
          ["bapbundle" "remove" "taint.plugin"]]
-depends: ["bap-std" "cmdliner"]
+depends: [
+    "bap-std"
+    "cmdliner"     {= "0.9.8"}
+]

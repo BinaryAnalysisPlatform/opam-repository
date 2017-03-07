@@ -31,7 +31,7 @@ remove: [
 
 depends: [
     "bap-std"
-    "cmdliner"
+    "cmdliner"          {= "0.9.8"}
     ("conf-bap-llvm" | "conf-llvm")
     "conf-env-travis"
 ]

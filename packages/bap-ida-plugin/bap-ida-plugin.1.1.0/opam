@@ -17,4 +17,7 @@ remove: [
         [ "bapbundle" "remove" "emit_ida_script.plugin"]
 
 ]
-depends: ["bap" "cmdliner"]
+depends: [
+    "bap"
+    "cmdliner"      {= "0.9.8"}
+]

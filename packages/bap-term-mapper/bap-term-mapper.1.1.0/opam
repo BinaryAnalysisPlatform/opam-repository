@@ -27,5 +27,5 @@ remove: [[ "ocamlfind" "remove" "bap-plugin-map_terms"]
 depends: [
     "oasis"             {build & = "0.4.7"}
     "bap-std"
-    "cmdliner"
+    "cmdliner"          {= "0.9.8"}
 ]

@@ -20,7 +20,7 @@ depends: [
     "bap-std"
     "bap-ida"
     "bap-byteweight-frontend"
-    "cmdliner"
+    "cmdliner"                {= "0.9.8"}
     "fileutils"
     "re"
 ]
