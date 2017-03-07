@@ -24,7 +24,7 @@ remove: [
 depends: [
     "bap-std"
     "bap-traces"
-    "cmdliner"
+    "cmdliner"    {= "0.9.8"}
     "oasis"       {build}
     "ounit"
     "pcre"

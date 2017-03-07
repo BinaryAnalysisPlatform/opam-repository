@@ -19,7 +19,7 @@ remove: [["rm" "-f" "%{bin}%/bap-byteweight"]]
 depends: [
     "bap-std"
     "bap-byteweight"
-    "cmdliner"
+    "cmdliner"           {= "0.9.8"}
     "ocurl"
     "fileutils"
     "re"

@@ -22,5 +22,5 @@ remove: [
 
 depends: [
     "bap-std"
-    "cmdliner"
+    "cmdliner"       {= "0.9.8"}
 ]

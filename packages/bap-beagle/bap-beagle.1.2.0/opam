@@ -16,4 +16,8 @@ remove: [["ocamlfind" "remove" "bap-plugin-beagle"]
          ["ocamlfind" "remove" "bap-beagle-prey"]
          ["bapbundle" "remove" "beagle.plugin"]
          ]
-depends: ["bap-std" "cmdliner" "bap-microx"]
+depends: [
+    "bap-std"
+    "cmdliner"        {= "0.9.8"}
+    "bap-microx"
+]

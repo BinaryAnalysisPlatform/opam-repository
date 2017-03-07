@@ -16,4 +16,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-api"]
          ["ocamlfind" "remove" "bap-api"]
          [ "bapbundle" "remove" "api.plugin"]
          ]
-depends: ["bap-std" "cmdliner"]
+depends: [
+    "bap-std"
+    "cmdliner"       {= "0.9.8"}
+]
