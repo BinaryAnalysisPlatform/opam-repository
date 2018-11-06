@@ -45,7 +45,7 @@ let of_env () =
   try Some (Sys.getenv "LLVM_CONFIG")
   with Not_found -> None
 
-let write path version =
+let write path version is_shared =
   let digest = Digest.to_hex (Digest.file path) in
   let oc = open_out "%{_:name}%.config" in
   fprintf oc {|
@@ -54,8 +54,9 @@ file-depends: [ [ %S %S ] ]
 variables {
   config: %S
   package-version: "%s"
+  is-shared-only: %b
 }
-|} path digest path version;
+|} path digest path version is_shared;
   close_out oc
 
 let (/) = Filename.concat
@@ -67,6 +68,10 @@ let normalize ver =
     else ver in
   if ver > "3.8" then String.sub ver 0 1
   else ver
+
+let is_shared_only ver cfg =
+  normalize ver > "3.8" &&
+    cmd "%s --link-static --libs" cfg = None
 
 let brew_config ver =
   match cmd "brew --cellar" with
@@ -142,7 +147,9 @@ let () =
     | Some path ->
       match cmd "%s --version" path with
       | None -> eprintf "'%s --version' failed\n" path; exit 1
-      | Some version -> write path version
+      | Some version ->
+         let is_shared = is_shared_only version path in
+         write path version is_shared
   with e ->
     eprintf "build failed: %s\n" (Printexc.to_string e);
     exit 1

@@ -13,6 +13,7 @@ build: [
   "--with-cxx=`which clang++`"
   "--with-llvm-version=%{conf-bap-llvm:package-version}%"
   "--with-llvm-config=%{conf-bap-llvm:config}%"
+  "--disable-llvm-static" {conf-bap-llvm:is-shared-only}
   "--enable-llvm"]
   [make]
   ]
