@@ -33,5 +33,5 @@ description: """
 Provides semantics for ARM instructions, disassembler, and partial
 support for the gnueabi ABI"""
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

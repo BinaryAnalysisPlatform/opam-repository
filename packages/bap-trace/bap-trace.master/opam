@@ -33,5 +33,5 @@ depends: [
 ]
 synopsis: "A plugin to load and run program execution traces"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

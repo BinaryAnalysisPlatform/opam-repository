@@ -27,5 +27,5 @@ depends: [
 synopsis: "BAP PowerPC lifter"
 description: "Provides support for PPC and PPC64 architectures."
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

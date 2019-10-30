@@ -28,5 +28,5 @@ or a constant. We call such representation a Trivial Condition Form
 (TCF). During the translation all complex condition expressions are
 hoisted into the assignemnt section of a block."""
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

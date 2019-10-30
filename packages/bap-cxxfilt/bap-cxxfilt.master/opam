@@ -28,5 +28,5 @@ depends: [
 ]
 synopsis: "A demangler that relies on a c++filt utility"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

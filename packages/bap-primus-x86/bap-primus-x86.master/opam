@@ -27,5 +27,5 @@ depends: [
 ]
 synopsis: "The x86 CPU support package for BAP Primus CPU emulator"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

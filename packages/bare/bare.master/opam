@@ -32,5 +32,5 @@ and join observations through the stream. In a sense, BARE could be seen as
 SQL select/join for streams."""
 flags: light-uninstall
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

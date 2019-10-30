@@ -22,5 +22,5 @@ depends: [
 ]
 synopsis: "BAP Taint propagation engine using based on microexecution"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

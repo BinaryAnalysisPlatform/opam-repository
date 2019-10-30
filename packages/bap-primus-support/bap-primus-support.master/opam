@@ -43,5 +43,5 @@ depends: [
 ]
 synopsis: "Provides supporting components for Primus"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

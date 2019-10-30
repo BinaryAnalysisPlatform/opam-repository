@@ -32,5 +32,5 @@ Provides a generic library for handling program taints, and plugins
 that integrate existing and new taint analysis tools with the new
 framework."""
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

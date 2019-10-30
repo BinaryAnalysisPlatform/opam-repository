@@ -28,5 +28,5 @@ depends: [
 ]
 synopsis: "BAP ELF parser and loader written in native OCaml"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

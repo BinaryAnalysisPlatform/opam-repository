@@ -27,5 +27,5 @@ possible that a binary indeed contains a dead code. The algorithm
 doesn't remove variables that are stored in memory, only registers are
 considered."""
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

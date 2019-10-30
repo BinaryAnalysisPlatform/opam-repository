@@ -41,5 +41,5 @@ interpreter. The Framework allows users to customize the interpreter
 by implementing different machine components."""
 flags: light-uninstall
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

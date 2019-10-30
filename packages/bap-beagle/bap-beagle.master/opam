@@ -30,5 +30,5 @@ description: """
 Like strings on steroids - finds strings encoded in binaries,
 even if they are not truly static."""
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

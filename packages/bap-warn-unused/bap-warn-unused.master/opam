@@ -31,5 +31,5 @@ depends: [
 synopsis:
   "Emit a warning if an unused result may cause a bug or security issue"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

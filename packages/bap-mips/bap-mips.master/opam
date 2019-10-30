@@ -26,5 +26,5 @@ depends: [
 synopsis: "BAP MIPS lifter"
 description: "Provides lifter for MIPS and MIPS32 architectures"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }

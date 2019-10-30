@@ -21,5 +21,5 @@ depends: [
 ]
 synopsis: "implements the disassembler command"
 url {
-  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+  src: "git+https://github.com/gitoleg/bap#test-build"
 }
