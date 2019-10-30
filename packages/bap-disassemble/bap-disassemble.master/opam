@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-mc"
+name: "bap-disassemble"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,32 +8,18 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure"
-                 "--prefix=%{prefix}%"
-                 "--mandir=%{man}%"
-                 "--enable-mc"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-disassemble"]
   [make]
 ]
-
-install: [
-  [make "install"]
-]
-
-remove: [
-  ["ocamlfind" "remove" "bap-plugin-mc"]
-  ["bapbundle" "remove" "mc.plugin"]
-  ["rm" "-f" "%{bin}%/bap-mc"]
-]
-
+install: [[make "install"]]
+remove: [["ocamlfind" "remove" "bap-plugin-disassemble"]
+         ["bapbundle" "remove" "disassemble.plugin"]
+         ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
-  "oasis" {build & >= "0.4.7"}
   "bap-std" {= "master"}
-  "cmdliner"
 ]
-synopsis: "BAP machine instruction playground"
-description: "A BAP version of llvm-mc tool."
-flags: light-uninstall
+synopsis: "implements the disassembler command"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

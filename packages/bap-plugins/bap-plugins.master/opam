@@ -1,0 +1,30 @@
+opam-version: "2.0"
+name: "bap-plugins"
+version: "master"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
+license: "MIT"
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--enable-bap-plugins"]
+  [make]
+]
+install: [[make "install"]]
+remove: [["ocamlfind" "remove" "bap-plugins"]
+         ]
+depends: [
+  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "cmdliner"
+  "core_kernel"
+  "dynlink"
+  "fileutils"
+  "findlib"
+  "bap-bundle"
+  "bap-future"
+]
+synopsis: "BAP plugins support library"
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+}

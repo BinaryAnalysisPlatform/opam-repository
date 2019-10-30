@@ -1,0 +1,29 @@
+opam-version: "2.0"
+name: "bap-bundle"
+version: "master"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
+license: "MIT"
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--enable-bap-bundle"]
+  [make]
+]
+install: [[make "install"]]
+remove: [["ocamlfind" "remove" "bap-bundle"]
+         ["rm" "-f" "%{bin}%/bap-bundle"]
+         ]
+depends: [
+  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "uri"
+  "camlzip"
+  "unix"
+  "core_kernel"
+  "ppx_jane"
+]
+synopsis: "BAP bundler"
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+}
