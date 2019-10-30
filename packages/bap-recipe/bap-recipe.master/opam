@@ -12,9 +12,7 @@ build: [
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-plugin-recipe_command"]
-         ["ocamlfind" "remove" "bap-recipe"]
-         ["bapbundle" "remove" "recipe_command.plugin"]
+remove: [["ocamlfind" "remove" "bap-recipe"]
          ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
@@ -25,7 +23,6 @@ depends: [
   "camlzip"
   "uuidm"
   "bap-std" {= "master"}
-  "bap-main"
 ]
 synopsis: "stores command line parameters and resources in a single file"
 url {

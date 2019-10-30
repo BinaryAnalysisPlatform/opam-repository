@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-bundle"
+name: "bap-recipe"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,21 +8,26 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-bap-bundle"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-recipe"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-bundle"]
-         ["rm" "-f" "%{bin}%/bap-bundle"]
+remove: [["ocamlfind" "remove" "bap-plugin-recipe_command"]
+          ["bapbundle" "remove" "recipe_command.plugin"]
          ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
-  "uri"
+  "base"
+  "stdio"
+  "parsexp"
+  "fileutils"
   "camlzip"
-  "core_kernel"
-  "ppx_jane"
+  "uuidm"
+  "bap-std" {= "master"}
+  "bap-recipe"
+  "bap-main"
 ]
-synopsis: "BAP bundler"
+synopsis: "Provides commands to manipulate the recipe subsystem"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
