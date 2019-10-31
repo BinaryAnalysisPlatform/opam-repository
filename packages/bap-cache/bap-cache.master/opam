@@ -27,5 +27,5 @@ depends: [
 ]
 synopsis: "BAP caching service"
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

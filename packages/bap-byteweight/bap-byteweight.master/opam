@@ -33,5 +33,5 @@ description: """
 Provides a library and a plugin that uses the Byteweigh algorithm for
 finding entry points (function strats) in stripped code."""
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

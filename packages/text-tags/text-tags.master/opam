@@ -24,5 +24,5 @@ depends: [
 synopsis: "A library for rich formatting using semantics tags"
 flags: light-uninstall
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

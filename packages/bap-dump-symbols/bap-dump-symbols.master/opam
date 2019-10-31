@@ -26,5 +26,5 @@ depends: [
 ]
 synopsis: "BAP plugin that dumps symbols information from a binary"
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

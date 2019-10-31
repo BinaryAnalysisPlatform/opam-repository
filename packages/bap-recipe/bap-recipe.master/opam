@@ -25,5 +25,5 @@ depends: [
 ]
 synopsis: "stores command line parameters and resources in a single file"
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

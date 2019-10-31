@@ -42,5 +42,5 @@ these functors, any algorithm written for OCamlGraph can be used on
 `Graphlibs` graph and vice verse."""
 flags: light-uninstall
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

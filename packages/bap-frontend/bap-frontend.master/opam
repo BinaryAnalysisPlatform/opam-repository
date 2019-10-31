@@ -34,5 +34,5 @@ synopsis: "BAP frontend"
 description: "The command-line interface to the Binary Analysis Platform."
 flags: light-uninstall
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

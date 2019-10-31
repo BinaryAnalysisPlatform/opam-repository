@@ -29,5 +29,5 @@ representation and provides a type safe monadic interface for quering
 and updating documents."""
 flags: light-uninstall
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

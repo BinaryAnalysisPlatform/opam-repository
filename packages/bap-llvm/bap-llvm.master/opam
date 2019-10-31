@@ -46,5 +46,5 @@ description:
   "Provides a loader and a disassembler, based on LLVM-MC library."
 extra-files: ["detect.travis" "md5=00e7b28719062d550dcd7813becf7396"]
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

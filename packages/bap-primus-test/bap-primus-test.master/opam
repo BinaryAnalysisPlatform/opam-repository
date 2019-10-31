@@ -40,5 +40,5 @@ Check Returned Value - verifies that a program is addressing all
 possible outcomes of certain API calls, e.g., checks return values,
 error codes, etc."""
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

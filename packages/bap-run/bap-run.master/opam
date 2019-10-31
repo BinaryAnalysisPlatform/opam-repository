@@ -27,5 +27,5 @@ depends: [
 synopsis: "A BAP plugin that executes a binary"
 description: "Uses the Primus Microexecution Framework to execute a binary."
 url {
-  src: "git+https://github.com/gitoleg/bap#test-build"
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
