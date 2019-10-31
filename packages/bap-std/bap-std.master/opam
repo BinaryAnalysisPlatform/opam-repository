@@ -36,6 +36,7 @@ depends: [
   "bap-knowledge"
   "bap-bitvec"
   "bap-core-theory"
+  "bap-bundle"
   "bap-main"
   "bap-plugins"
   "camlzip" {>= "1.07"}
