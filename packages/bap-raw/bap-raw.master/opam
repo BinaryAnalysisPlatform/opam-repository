@@ -17,10 +17,10 @@ remove: [["ocamlfind" "remove" "bap-plugin-raw"]
          ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
-  "core_kernel"
+  "core_kernel" {>= "v0.11" & < "v0.12"}
   "ppx_jane"
   "bap-std" {= "master"}
-  "bap-main"
+  "bap-main" {= "master"}
 ]
 synopsis: "Provides a loader for raw binaries"
 url {

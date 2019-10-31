@@ -24,10 +24,10 @@ remove: [
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "oasis" {build & >= "0.4.7"}
-  "bap-std" {= "master"}
-  "core_kernel"
   "ocamlbuild"
+  "core_kernel" {>= "v0.11" & < "v0.12"}
   "ppx_jane"
+  "bap-std" {= "master"}
 ]
 
 synopsis: "BAP build automation tools"

@@ -32,13 +32,13 @@ remove: [
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "base-unix"
-  "bap-future"
-  "bap-knowledge"
-  "bap-bitvec"
-  "bap-core-theory"
-  "bap-bundle"
-  "bap-main"
-  "bap-plugins"
+  "bap-future" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-bitvec" {= "master"}
+  "bap-core-theory"  {= "master"}
+  "bap-bundle" {= "master"}
+  "bap-main" {= "master"}
+  "bap-plugins" {= "master"}
   "camlzip" {>= "1.07"}
   "core_kernel" {>= "v0.11" & < "v0.12"}
   "bin_prot" {>= "v0.11" & < "v0.12"}

@@ -28,7 +28,9 @@ remove: [
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "oasis" {build & >= "0.4.7"}
+  "core_kernel" {>= "v0.11" & < "v0.12"}
   "bap-std" {= "master"}
+  "bap-main"
 ]
 synopsis: "BAP machine instruction playground"
 description: "A BAP version of llvm-mc tool."

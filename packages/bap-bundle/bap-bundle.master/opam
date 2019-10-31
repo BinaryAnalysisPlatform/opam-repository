@@ -19,7 +19,7 @@ depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "uri"
   "camlzip"
-  "core_kernel"
+  "core_kernel" {>= "v0.11" & < "v0.12"}
   "ppx_jane"
 ]
 synopsis: "BAP bundler"

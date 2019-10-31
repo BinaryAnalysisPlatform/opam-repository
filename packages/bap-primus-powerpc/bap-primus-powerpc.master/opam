@@ -17,9 +17,9 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus_powerpc"]
          ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "core_kernel" {>= "v0.11" & < "v0.12"}
   "bap-std" {= "master"}
   "bap-primus"
-  "core_kernel"
 ]
 synopsis: "Performs the PowerPC target specific setup"
 url {
