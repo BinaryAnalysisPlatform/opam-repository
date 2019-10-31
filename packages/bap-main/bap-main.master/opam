@@ -18,9 +18,9 @@ depends: [
   "base"
   "stdio"
   "cmdliner"
-  "bap-future"
-  "bap-plugins"
-  "bap-recipe"
+  "bap-future"  {= "master"}
+  "bap-plugins" {= "master"}
+  "bap-recipe"  {= "master"}
 ]
 synopsis: "Build BAP Main Framework Configuration Library"
 url {

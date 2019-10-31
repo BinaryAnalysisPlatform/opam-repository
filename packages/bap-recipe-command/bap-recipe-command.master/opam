@@ -24,8 +24,8 @@ depends: [
   "camlzip"
   "uuidm"
   "bap-std" {= "master"}
-  "bap-recipe"
-  "bap-main"
+  "bap-recipe" {= "master"}
+  "bap-main" {= "master"}
 ]
 synopsis: "Provides commands to manipulate the recipe subsystem"
 url {

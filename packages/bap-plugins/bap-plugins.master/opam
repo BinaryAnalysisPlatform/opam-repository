@@ -19,8 +19,8 @@ depends: [
   "core_kernel" {>= "v0.11" & < "v0.12"}
   "cmdliner"
   "fileutils"
-  "bap-bundle"
-  "bap-future"
+  "bap-bundle" {= "master"}
+  "bap-future" {= "master"}
 ]
 synopsis: "BAP plugins support library"
 url {

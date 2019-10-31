@@ -19,7 +19,7 @@ depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "core_kernel" {>= "v0.11" & < "v0.12"}
   "bap-std" {= "master"}
-  "bap-primus"
+  "bap-primus" {= "master"}
 ]
 synopsis: "Performs the PowerPC target specific setup"
 url {
