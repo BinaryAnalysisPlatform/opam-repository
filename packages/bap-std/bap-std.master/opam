@@ -36,6 +36,8 @@ depends: [
   "bap-knowledge"
   "bap-bitvec"
   "bap-core-theory"
+  "bap-main"
+  "bap-plugins"
   "camlzip" {>= "1.07"}
   "core_kernel" {>= "v0.11" & < "v0.12"}
   "bin_prot" {>= "v0.11" & < "v0.12"}
