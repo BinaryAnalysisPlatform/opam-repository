@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-recipe"
+name: "bap-recipe-command"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,7 +8,7 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-recipe"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-recipe-cmd"]
   [make]
 ]
 install: [[make "install"]]
@@ -19,6 +19,7 @@ depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "base"
   "stdio"
+  "stdlib-shims"
   "parsexp"
   "fileutils"
   "camlzip"

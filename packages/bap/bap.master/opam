@@ -15,6 +15,7 @@ depends: [
   "bap-arm" {= "master"}
   "bap-beagle" {= "master"}
   "bap-bil" {= "master"}
+  "bap-build" {= "master"}
   "bap-bundle" {= "master"}
   "bap-byteweight" {= "master"}
   "bap-c" {= "master"}
@@ -48,6 +49,7 @@ depends: [
   "bap-print" {= "master"}
   "bap-raw" {= "master"}
   "bap-recipe" {= "master"}
+  "bap-recipe-command" {= "master"}
   "bap-relocatable" {= "master"}
   "bap-report" {= "master"}
   "bap-run" {= "master"}

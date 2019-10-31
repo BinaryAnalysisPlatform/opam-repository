@@ -17,6 +17,7 @@ depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "base"
   "stdio"
+  "stdlib-shims"
   "cmdliner"
   "bap-future"
   "bap-plugins"
