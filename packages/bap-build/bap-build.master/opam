@@ -27,9 +27,7 @@ depends: [
   "bap-std" {= "master"}
   "core_kernel"
   "ocamlbuild"
-  "ocaml-compiler-libs"
   "ppx_jane"
-
 ]
 
 synopsis: "BAP build automation tools"
