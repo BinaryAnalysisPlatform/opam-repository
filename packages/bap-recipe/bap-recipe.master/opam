@@ -22,7 +22,6 @@ depends: [
   "fileutils"
   "camlzip"
   "uuidm"
-  "bap-std" {= "master"}
 ]
 synopsis: "stores command line parameters and resources in a single file"
 url {
