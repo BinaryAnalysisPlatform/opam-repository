@@ -22,7 +22,7 @@ depends: [
   "bitvec-order" {= "master"}
   "bitvec-sexp" {= "master"}
 ]
-synopsis: "BAP core theory library"
+synopsis: "BAP Semantics Representation"
 description: """
 The Core Theory is an intermediate language that is designed to
 express the semantics of computer programs. It focuses on programs

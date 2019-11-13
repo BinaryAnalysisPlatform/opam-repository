@@ -18,11 +18,7 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "zarith"
 ]
-synopsis: "BAP bitvec library"
-description:
-"""
-abstract representation of a fixed size bitvector
-"""
+synopsis: "Bitvectors and modular arithmetic"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

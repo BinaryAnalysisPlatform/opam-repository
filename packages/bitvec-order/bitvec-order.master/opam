@@ -20,11 +20,7 @@ depends: [
   "bitvec"
   "bitvec-sexp"
 ]
-synopsis: "BAP bitvec-order library"
-description:
-"""
-Provides comparators for use with Janestreet Libraries
-"""
+synopsis: "Provides comparators for Bitvec library"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

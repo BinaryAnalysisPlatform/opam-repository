@@ -18,7 +18,7 @@ depends: [
   "bap-std" {= "master"}
   "bap-core-theory" {= "master"}
 ]
-synopsis: "BAP elementary library"
+synopsis: "BAP floating point approximations of elementary functions"
 description:
 """
 Library provides few primitives for approximations of floating
