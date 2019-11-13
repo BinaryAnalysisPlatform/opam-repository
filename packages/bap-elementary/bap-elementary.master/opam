@@ -19,6 +19,11 @@ depends: [
   "bap-core-theory" {= "master"}
 ]
 synopsis: "BAP elementary library"
+description:
+"""
+Library provides few primitives for approximations of floating
+point operations via table methods.
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

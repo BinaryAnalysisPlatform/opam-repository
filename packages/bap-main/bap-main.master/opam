@@ -24,6 +24,12 @@ depends: [
   "bap-recipe"  {= "master"}
 ]
 synopsis: "Build BAP Main Framework Configuration Library"
+description:
+"""
+This library is an entry point to BAP and serves the two goals:
+- embedding BAP in other applications;
+- extending BAP with the user code.
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

@@ -25,7 +25,7 @@ depends: [
   "uuidm"
   "stdlib-shims"
 ]
-synopsis: "stores command line parameters and resources in a single file"
+synopsis: "Stores command line parameters and resources in a single file"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

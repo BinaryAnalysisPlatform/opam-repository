@@ -21,6 +21,10 @@ depends: [
   "ppx_jane"
 ]
 synopsis: "BAP bitvec-binprot library"
+description:
+"""
+Provides serialization functions for the Binprot Protocol
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

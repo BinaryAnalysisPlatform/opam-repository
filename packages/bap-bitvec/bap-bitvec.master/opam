@@ -19,6 +19,10 @@ depends: [
   "zarith"
 ]
 synopsis: "BAP bitvec library"
+description:
+"""
+abstract representation of a fixed size bitvector
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

@@ -21,6 +21,10 @@ depends: [
   "sexplib0"
 ]
 synopsis: "BAP bitvec-sexp library"
+description:
+"""
+Provides sexp functions for Bap-bitvec library
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

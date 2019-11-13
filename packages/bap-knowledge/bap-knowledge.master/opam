@@ -18,7 +18,17 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "monads"
 ]
-synopsis: "BAP knowledge library"
+synopsis: "BAP Knowledge Representation Library"
+description: """
+The library provides facilities for storing, accumulating, and
+computing knowledge. The knowledge could be represented indirectly,
+in the Knowledge Base, or directly as knowledge values. The
+library focuses on representing knowledge that is partial and
+provides mechanisms for knowledge accumulation and
+refinement. The knowledge representation library leverages the
+powerful type system of the OCaml language to facilitate
+development of complex knowledge representation and reasoning systems.
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

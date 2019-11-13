@@ -19,7 +19,12 @@ depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "bap-std" {= "master"}
 ]
-synopsis: "implements the disassembler command"
+synopsis: "Implements the disassembler command"
+description: """
+Disassembles and analyzes the input file. This is the default
+command of the bap frontend which is assumed when no other command
+was specified.
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

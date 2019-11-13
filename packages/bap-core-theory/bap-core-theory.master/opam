@@ -23,6 +23,13 @@ depends: [
   "bap-bitvec-sexp" {= "master"}
 ]
 synopsis: "BAP core theory library"
+description: """
+The Core Theory is an intermediate language that is designed to
+express the semantics of computer programs. It focuses on programs
+that are represented in binary machine code and is capable of an
+accurate representation of the architectural and micro-architectural
+details of the program behavior.
+"""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
