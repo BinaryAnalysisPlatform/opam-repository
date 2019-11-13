@@ -20,7 +20,7 @@ depends: [
   "bin_prot"
   "ppx_jane"
 ]
-synopsis: "Provides serialization functions for Bitvec library in Binprot Protocol"
+synopsis: "Janestreet's Binprot serialization for Bitvec"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

@@ -18,7 +18,7 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "zarith"
 ]
-synopsis: "Bitvectors and modular arithmetic"
+synopsis: "Fixed-size bitvectors and modular arithmetic, based on Zarith"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

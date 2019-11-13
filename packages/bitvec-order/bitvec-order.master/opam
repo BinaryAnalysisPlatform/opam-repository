@@ -20,7 +20,7 @@ depends: [
   "bitvec"
   "bitvec-sexp"
 ]
-synopsis: "Provides comparators for Bitvec library"
+synopsis: "Base style comparators and orders for Bitvec"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
