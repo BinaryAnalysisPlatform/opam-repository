@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-bitvec-sexp"
+name: "bitvec-sexp"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -12,18 +12,18 @@ build: [
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-bitvec-sexp"]]
+remove: [["ocamlfind" "remove" "bitvec-sexp"]]
 
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "oasis" {build & >= "0.4.7"}
-  "bap-bitvec"
+  "bitvec"
   "sexplib0"
 ]
 synopsis: "BAP bitvec-sexp library"
 description:
 """
-Provides sexp functions for Bap-bitvec library
+Provides sexp functions for Bitvec library
 """
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"

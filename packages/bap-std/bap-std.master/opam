@@ -31,7 +31,7 @@ depends: [
   "base-unix"
   "bap-future" {= "master"}
   "bap-knowledge" {= "master"}
-  "bap-bitvec" {= "master"}
+  "bitvec" {= "master"}
   "bap-core-theory"  {= "master"}
   "bap-bundle" {= "master"}
   "bap-main" {= "master"}

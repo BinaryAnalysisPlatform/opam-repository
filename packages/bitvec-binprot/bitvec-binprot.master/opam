@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-bitvec"
+name: "bitvec-binprot"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,20 +8,22 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec-binprot"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-bitvec"] ]
+remove: [ ["ocamlfind" "remove" "bitvec-binprot"] ]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "oasis" {build & >= "0.4.7"}
-  "zarith"
+  "bitvec"
+  "bin_prot"
+  "ppx_jane"
 ]
-synopsis: "BAP bitvec library"
+synopsis: "BAP bitvec-binprot library"
 description:
 """
-abstract representation of a fixed size bitvector
+Provides serialization functions for the Binprot Protocol
 """
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"

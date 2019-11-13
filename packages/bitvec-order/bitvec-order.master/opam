@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-bitvec-binprot"
+name: "bitvec-order"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,22 +8,22 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec-binprot"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec-order"]
   [make]
 ]
 install: [[make "install"]]
-remove: [ ["ocamlfind" "remove" "bap-bitvec-binprot"] ]
+remove: [["ocamlfind" "remove" "bitvec-order"]]
 depends: [
   "ocaml" {>= "4.04.1" & < "4.08.0"}
   "oasis" {build & >= "0.4.7"}
-  "bap-bitvec"
-  "bin_prot"
-  "ppx_jane"
+  "base"
+  "bitvec"
+  "bitvec-sexp"
 ]
-synopsis: "BAP bitvec-binprot library"
+synopsis: "BAP bitvec-order library"
 description:
 """
-Provides serialization functions for the Binprot Protocol
+Provides comparators for use with Janestreet Libraries
 """
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
