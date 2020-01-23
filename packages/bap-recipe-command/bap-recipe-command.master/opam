@@ -16,7 +16,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-recipe_command"]
           ["bapbundle" "remove" "recipe_command.plugin"]
          ]
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "base"
   "stdio"
   "parsexp"

@@ -17,8 +17,8 @@ install: [[make "install"]]
 remove: [["ocamlfind" "remove" "text-tags"]]
 
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
-  "core_kernel" {>= "v0.11" & < "v0.12"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
   "oasis" {build & >= "0.4.7"}
 ]
 synopsis: "A library for rich formatting using semantics tags"

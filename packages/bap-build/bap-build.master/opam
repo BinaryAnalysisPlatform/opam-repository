@@ -22,10 +22,10 @@ remove: [
 ]
 
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "oasis" {build & >= "0.4.7"}
   "ocamlbuild"
-  "core_kernel" {>= "v0.11" & < "v0.12"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
   "ppx_jane"
 ]
 

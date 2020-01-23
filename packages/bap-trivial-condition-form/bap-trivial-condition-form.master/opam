@@ -18,7 +18,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-trivial_condition_form"]
          ["bapbundle" "remove" "trivial_condition_form.plugin"]]
 
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "bap-std" {= "master"}
 ]
 synopsis: "Eliminates complex conditionals in branches"

@@ -14,7 +14,7 @@ build: [
 install: [[make "install"]]
 remove: [["ocamlfind" "remove" "bap-dwarf"]]
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "bap-std" {= "master"}
 ]
 synopsis: "BAP DWARF parsing library"

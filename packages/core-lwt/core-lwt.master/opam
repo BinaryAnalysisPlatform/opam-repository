@@ -22,11 +22,11 @@ remove: [
 ]
 
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "oasis" {build & >= "0.4.0"}
   "base-unix"
   "base-threads"
-  "core_kernel" {>= "v0.11" & < "v0.12"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
   "lwt" {>= "4.0.0" & < "5.0.0"}
 ]
 synopsis: "Lwt library wrapper in the Janestreet core style"

@@ -20,7 +20,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-objdump"]
 	 ["bapbundle" "remove" "objdump.plugin"]
 ]
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "bap-std" {= "master"}
   "re"
   "cmdliner"

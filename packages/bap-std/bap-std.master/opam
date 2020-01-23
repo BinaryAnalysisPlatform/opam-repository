@@ -27,7 +27,7 @@ remove: [
 ]
 
 depends: [
-  "ocaml" {>= "4.04.1" & < "4.08.0"}
+  "ocaml" {>= "4.07.1" & < "4.10.0"}
   "base-unix"
   "bap-future" {= "master"}
   "bap-knowledge" {= "master"}
@@ -37,13 +37,13 @@ depends: [
   "bap-main" {= "master"}
   "bap-plugins" {= "master"}
   "camlzip" {>= "1.07"}
-  "core_kernel" {>= "v0.11" & < "v0.12"}
-  "bin_prot" {>= "v0.11" & < "v0.12"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "bin_prot" {>= "v0.12" & < "v0.13"}
   "fileutils"
   "graphlib" {= "master"}
   "oasis" {build & >= "0.4.7"}
   "ocamlfind" {>= "1.5.6" & < "2.0"}
-  "ppx_jane" {>= "v0.11" & < "v0.12"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
   "regular"
   "uri"
   "utop" {build & >= "2.0.0"}
