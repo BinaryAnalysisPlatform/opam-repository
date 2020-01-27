@@ -18,7 +18,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-report"]
          ["bapbundle" "remove" "report.plugin"]]
 
 depends: [
-  "ocaml" {>= "4.07.1" & < "4.10.0"}
+  "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
 ]
 synopsis: "A BAP plugin that reports program status"

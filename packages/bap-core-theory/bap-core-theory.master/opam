@@ -14,7 +14,7 @@ build: [
 install: [[make "install"]]
 remove: [["ocamlfind" "remove" "bap-core-theory"]]
 depends: [
-  "ocaml" {>= "4.07.1" & < "4.10.0"}
+  "ocaml" {>= "4.07.0" & < "4.10.0"}
   "oasis" {build & >= "0.4.7"}
   "bap-knowledge" {= "master"}
   "bitvec" {= "master"}
