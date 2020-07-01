@@ -50,6 +50,8 @@ depends: [
   "bap-primus-symbolic-executor" {= "master"}
   "bap-primus-systems" {= "master"}
   "bap-primus-test" {= "master"}
+  "bap-primus-taint" {= "master"}
+  "bap-primus-propagate-taint" {= "master"}
   "bap-primus-x86" {= "master"}
   "bap-print" {= "master"}
   "bap-raw" {= "master"}

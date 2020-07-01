@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-support"
+name: "bap-primus-track-visited"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -7,19 +7,22 @@ homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
 bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--enable-primus-track-visited"]
+  [make]
+]
+
+install: [[make "install"]]
+
+remove: [ ["ocamlfind" "remove" "bap-primus_track_visited"] ]
+
 
 depends: [
-  "bap-primus-exploring-scheduler"
-  "bap-primus-greedy-scheduler"
-  "bap-primus-limit"
-  "bap-primus-loader"
-  "bap-primus-mark-visited"
-  "bap-primus-print"
-  "bap-primus-promiscuous"
-  "bap-primus-round-robin-scheduler"
-  "bap-primus-wandering-scheduler"
+  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "bap-std" {= "master"}
+  "bap-primus"
 ]
-synopsis: "Provides supporting components for Primus"
+synopsis: "Tracks basic blocks visited by Primus"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

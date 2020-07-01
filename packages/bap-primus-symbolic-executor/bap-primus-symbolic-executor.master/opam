@@ -22,7 +22,7 @@ depends: [
   "bap-main" {= "master"}
   "bap-std"  {= "master"}
   "bap-primus"
-  "bap-primus-support"
+  "bap-primus-track-visited"
   "bitvec"
   "core_kernel"  {>= "v0.12" & < "v0.13"}
   "monads"
@@ -33,11 +33,11 @@ depends: [
 ]
 synopsis: "Primus Symbolic Executor"
 description: """
-Provides the bap:symbolic-executor Primus system that uses an SMT solver (z3) to compute 
-inputs for as many paths as possible. It also includes the symbolic-computer 
-component that computes symbolic formulas for each value that depends on input 
-and provides Primus Lisp primitives to create symbolic values and symbolic memories, 
-as well as to specify additional constraints and post asserts that are dispatched to 
+Provides the bap:symbolic-executor Primus system that uses an SMT solver (z3) to compute
+inputs for as many paths as possible. It also includes the symbolic-computer
+component that computes symbolic formulas for each value that depends on input
+and provides Primus Lisp primitives to create symbolic values and symbolic memories,
+as well as to specify additional constraints and post asserts that are dispatched to
 the SMT solver.
 """
 url {

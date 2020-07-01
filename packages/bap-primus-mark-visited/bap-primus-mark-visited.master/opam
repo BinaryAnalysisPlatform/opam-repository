@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-taint"
+name: "bap-primus-mark-visited"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,27 +8,22 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%"
-   "--enable-taint"
-  ]
+  ["./configure" "--prefix=%{prefix}%" "--enable-primus-mark-visited"]
   [make]
 ]
+
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-taint"]
-  ["ocamlfind" "remove" "bap-plugin-taint"]
-  ["bapbundle" "remove" "taint.plugin"]
-]
+
+remove: [ ["ocamlfind" "remove" "bap-plugin-primus_mark_visited"]
+          ["bapbundle" "remove" "primus_mark_visited.plugin"]]
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-primus" {= "master"}
+  "bap-primus"
+  "bap-primus-track-visited"
 ]
-synopsis: "BAP Taint Analysis Framework"
-description: """
-Provides a generic library for handling program taints, and plugins
-that integrate existing and new taint analysis tools with the new
-framework."""
+synopsis: "Registers the bap:mark-visited component"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

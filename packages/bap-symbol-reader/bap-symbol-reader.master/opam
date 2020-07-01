@@ -11,7 +11,7 @@ build: [
   ["./configure"
                  "--prefix=%{prefix}%"
                  "--mandir=%{man}%"
-                 "--enable-symbol-reader"]
+                 "--enable-read-symbols"]
   [make]
 ]
 

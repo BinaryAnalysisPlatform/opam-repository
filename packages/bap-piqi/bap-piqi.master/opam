@@ -11,7 +11,7 @@ build: [
   ["./configure"
                  "--prefix=%{prefix}%"
                  "--mandir=%{man}%"
-                 "--enable-piqi"]
+                 "--enable-piqi-printers" ]
   [make]
 ]
 
