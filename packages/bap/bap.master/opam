@@ -11,6 +11,7 @@ license: "MIT"
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-abi" {= "master"}
+  "bap-analyze" {= "master"}
   "bap-api" {= "master"}
   "bap-arm" {= "master"}
   "bap-beagle" {= "master"}

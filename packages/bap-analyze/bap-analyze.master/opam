@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-disassemble"
+name: "bap-analyze"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,22 +8,24 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-disassemble"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-analyze"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-plugin-disassemble"]
-         ["bapbundle" "remove" "disassemble.plugin"]
+remove: [["ocamlfind" "remove" "bap-plugin-analyze"]
+         ["bapbundle" "remove" "analyze.plugin"]
          ]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
+  "linenoise" {>= "1.1.0" & "2.0.0"}
+
 ]
-synopsis: "Implements the disassemble command"
+synopsis: "Implements the analyze command"
 description: """
-Disassembles and analyzes the input file. This is the default
-command of the bap frontend which is assumed when no other command
-was specified.
+Analyses the knowledge base. Loads the knowledge base and executes the
+specified commands or run the REPL if no commands or script files were
+specified.
 """
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
