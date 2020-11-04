@@ -57,7 +57,6 @@ depends: [
   "bap-primus-propagate-taint" {= "master"}
   "bap-primus-x86" {= "master"}
   "bap-print" {= "master"}
-  "bap-radare2" {= "master"}
   "bap-raw" {= "master"}
   "bap-recipe" {= "master"}
   "bap-recipe-command" {= "master"}
