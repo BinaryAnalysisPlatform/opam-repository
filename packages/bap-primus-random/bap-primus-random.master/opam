@@ -18,10 +18,15 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus_random"]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "zarith"
   "bap-std" {= "master"}
   "bap-primus" {= "master"}
+  "bap-main" {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-sexp" {= "master"}
 ]
-synopsis: "Provides components for Primus state randomization."
+synopsis: "Provides components for Primus state randomization"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
