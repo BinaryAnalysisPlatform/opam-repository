@@ -23,10 +23,19 @@ remove: [
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ogre" {= "master"}
+  "regular" {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-order" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-main" {= "master"}
   "bap-std" {= "master"}
-  "bap-llvm"
-  "bap-abi"
-  "bap-c"
+  "bap-abi" {= "master"}
+  "bap-api" {= "master"}
+  "bap-c" {= "master"}
 ]
 synopsis: "BAP ARM lifter and disassembler"
 description: """
