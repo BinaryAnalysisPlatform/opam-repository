@@ -18,7 +18,7 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "bitvec"
   "bin_prot"
-  "ppx_jane"
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
 ]
 synopsis: "Janestreet's Binprot serialization for Bitvec"
 url {

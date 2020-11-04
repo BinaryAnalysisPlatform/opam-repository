@@ -21,7 +21,7 @@ depends: [
   "uri"
   "camlzip"
   "core_kernel" {>= "v0.12" & < "v0.13"}
-  "ppx_jane"
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
   "fileutils"
 ]
 synopsis: "BAP bundler"
