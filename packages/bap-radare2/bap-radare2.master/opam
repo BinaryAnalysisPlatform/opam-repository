@@ -18,18 +18,23 @@ remove: [["ocamlfind" "remove" "bap-plugin-radare2"]
 	 ["bapbundle" "remove" "radare2.plugin"]
 ]
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-std" {= "master"}
-  "bap-core-theory"
-  "bap-future"
-  "bap-knowledge"
-  "bap-relation"
-  "bitvec"
-  "core_kernel" {>= "v0.12" & < "v0.13"}
   "conf-radare2"
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
   "re"
   "yojson"
   "zarith"
+  "bap-abi" {= "master"}
+  "bap-arm" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-future" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-main" {= "master"}
+  "bap-relation" {= "master"}
+  "bap-std"  {= "master"}
+  "bitvec" {= "master"}
+  "ogre" {= "master"}
 ]
 synopsis: "Extract symbols from binary using radare2"
 url {
