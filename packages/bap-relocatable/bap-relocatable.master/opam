@@ -38,10 +38,10 @@ depends: [
   "monads" {= "master"}
   "ogre" {= "master"}
 ]
-synopsis: "Extracts symbolic information from the program relocations.
-
+synopsis:"Extracts symbolic information from the program relocations"
+description: """
 The relocation symbolizer leverages the relocation information stored
-in files to extract symbol names."
+in files to extract symbol names."""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }

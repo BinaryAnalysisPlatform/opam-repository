@@ -35,7 +35,7 @@ depends: [
   "bitvec-sexp" {= "master"}
   "ogre" {= "master"}
 ]
-synopsis: "Identifies and manages stub functions in a binary."
+synopsis: "Identifies and manages stub functions in a binary"
 description: """
 Identifies functions that are stubs and redirects calls to stubs to
 the calls to the implemenations, in case if the latter is present in
