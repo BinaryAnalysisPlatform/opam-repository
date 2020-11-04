@@ -19,10 +19,21 @@ remove: [["ocamlfind" "remove" "bap-plugin-powerpc"]
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-abi"
-  "bap-c"
-  "bap-primus" {= "master"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "cmdliner" {>= "1.0.0" & < "2.0.0"}
   "zarith"
+  "bap-abi" {= "master"}
+  "bap-api" {= "master"}
+  "bap-c" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-main" {= "master"}
+  "bap-std" {= "master"}
+  "bitvec" {= "master"}
+  "monads" {= "master"}
+  "ogre" {= "master"}
+  "regular" {= "master"}
 ]
 synopsis: "BAP PowerPC lifter"
 description: "Provides support for PPC and PPC64 architectures."
