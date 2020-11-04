@@ -18,7 +18,7 @@ remove: [["rm" "-f" "%{bin}%/bap-byteweight"]]
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-std" {<= "1.6" & = "master"}
+  "bap-std" {= "master"}
   "bap-ida" {= "master"}
   "bap-byteweight-frontend" {= "master"}
   "cmdliner"
