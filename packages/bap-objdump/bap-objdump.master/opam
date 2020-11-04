@@ -20,11 +20,18 @@ remove: [["ocamlfind" "remove" "bap-plugin-objdump"]
 ]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-std" {= "master"}
-  "bap-main"
-  "bap-relation"
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
   "re"
   "conf-binutils" {= "0.3"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-main" {= "master"}
+  "bap-relation" {= "master"}
+  "bap-std"  {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-order" {= "master"}
+  "bitvec-sexp" {= "master"}
 ]
 synopsis: "Extract symbols from binary, using binutils objdump"
 url {
