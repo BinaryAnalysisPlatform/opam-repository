@@ -17,11 +17,11 @@ remove: [["ocamlfind" "remove" "bap-plugin_strings"]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "regular"
-  "bap-strings"
-  "bap-beagle"
+  "regular" {= "master"}
+  "bap-strings" {= "master"}
+  "bap-beagle" {= "master"}
 ]
-synopsis: "finds strings of characters"
+synopsis: "Finds strings of characters using microexecution"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
