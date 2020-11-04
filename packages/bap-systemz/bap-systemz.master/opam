@@ -1,0 +1,40 @@
+opam-version: "2.0"
+name: "bap-systemz"
+version: "master"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
+license: "MIT"
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--enable-systemz"]
+  [make]
+]
+
+install: [[make "install"]]
+
+remove: [
+        ["ocamlfind" "remove" "bap-systemz"]
+        ["ocamlfind" "remove" "bap-plugin-systemz"]
+        ["bapbundle" "remove" "systemz.plugin"]
+
+]
+
+depends: [
+  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ogre" {= "master"}
+  "bitvec" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-main" {= "master"}
+  "bap-std" {= "master"}
+]
+synopsis: "A target support package for the Systemz (Z9) ISA"
+description: """
+Provides semantics for Systemz instructions."""
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+}
