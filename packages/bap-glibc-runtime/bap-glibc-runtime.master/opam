@@ -19,13 +19,14 @@ remove: [["ocamlfind" "remove" "bap-plugin-glibc_runtime"]
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "bap-abi" {= "master"}
+  "bap-c" {= "master"}
   "bap-main" {= "master"}
-  "bap-std"  {= "master"}
-  "bap-abi"  {= "master"}
-  "bap-c"    {= "master"}
-  "base"     {>= "v0.12" & < "v0.13"}
+  "bap-std" {= "master"}
+  "ogre" {= "master"}
 ]
-synopsis: "detects glibc runtime"
+synopsis: "Detects the presence of glibc runtime"
 description: """
 Enables ad-hoc support for glibc runtime code. In particular it
 detects the locations of main and __libc_start_main
