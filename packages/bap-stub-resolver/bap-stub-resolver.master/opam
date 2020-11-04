@@ -21,19 +21,19 @@ remove: [
         ]
 
 depends: [
+  "core_kernel" {>= "v0.12" & < "v0.13"}
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-std" {= "master"}
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
   "bap-abi" {= "master"}
-  "bap-knowledge" {= "master"}
   "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
   "bap-main" {= "master"}
+  "bap-relation" {= "master"}
+  "bap-std"  {= "master"}
   "bitvec" {= "master"}
   "bitvec-order" {= "master"}
-  "bap-future"
-  "bap-main"
-  "ppx_jane"
-  "core_kernel" {>= "v0.12" & < "v0.13"}
-  "ounit"
+  "bitvec-sexp" {= "master"}
+  "ogre" {= "master"}
 ]
 synopsis: "Identifies and manages stub functions in a binary."
 description: """
