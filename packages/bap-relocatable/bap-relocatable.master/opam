@@ -20,18 +20,23 @@ remove: [
         ]
 
 depends: [
+  "core_kernel" {>= "v0.12" & < "v0.13"}
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap-std" {= "master"}
-  "ogre"
-  "bap-knowledge"
-  "core_kernel"
-  "bap-future"
-  "monads"
-  "bitvec"
-  "bitvec-order"
-  "bap-core-theory"
-  "bap-main"
-  "ppx_jane"
+  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "bap-abi" {= "master"}
+  "bap-arm" {= "master"}
+  "bap-powerpc" {= "master"}
+  "bap-x86" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-main" {= "master"}
+  "bap-relation" {= "master"}
+  "bap-std"  {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-order" {= "master"}
+  "bitvec-sexp" {= "master"}
+  "monads" {= "master"}
+  "ogre" {= "master"}
 ]
 synopsis: "Extracts symbolic information from the program relocations.
 
