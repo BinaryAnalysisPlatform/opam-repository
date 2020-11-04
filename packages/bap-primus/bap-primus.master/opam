@@ -19,11 +19,11 @@ remove: [["ocamlfind" "remove" "bap-primus"]]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-abi"
-  "bap-c"
-  "bap-future"
-  "bap-strings"
-  "monads"
+  "bap-abi" {= "master"}
+  "bap-c" {= "master"}
+  "bap-future" {= "master"}
+  "bap-strings" {= "master"}
+  "monads" {= "master"}
   "uuidm"
   "graphlib" {= "master"}
   "parsexp" {>= "v0.12" & < "v0.13"}

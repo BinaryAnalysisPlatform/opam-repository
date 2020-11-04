@@ -20,10 +20,10 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus_print"]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-primus"
-  "bap-future"
-  "monads"
-  "bare"
+  "bap-primus" {= "master"}
+  "bap-future" {= "master"}
+  "monads" {= "master"}
+  "bare" {= "master"}
 ]
 synopsis: "Prints Primus states and observations"
 url {

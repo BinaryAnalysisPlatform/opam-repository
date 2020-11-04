@@ -20,9 +20,9 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus_exploring_scheduler"]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-primus"
-  "monads"
-  "bap-future"
+  "bap-primus" {= "master"}
+  "monads" {= "master"}
+  "bap-future" {= "master"}
 ]
 synopsis: "Evaluates all machines, prioritizing the least visited"
 url {

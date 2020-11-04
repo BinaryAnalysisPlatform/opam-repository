@@ -16,10 +16,10 @@ remove: [["ocamlfind" "remove" "bap-lisp"]]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "parsexp"
-  "bap-strings"
-  "bap-knowledge"
-  "bap-core-theory"
-  "graphlib" {= "master" }
+  "bap-strings" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "graphlib" {= "master"}
 ]
 synopsis: "BAP lisp library"
 url {

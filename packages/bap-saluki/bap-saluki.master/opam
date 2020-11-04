@@ -13,9 +13,9 @@ install : [make "-C" "saluki" "install"]
 remove  : ["bapbundle" "remove" "saluki.plugin"]
 depends: [
   "ocaml"
-  "bap-std"  {= "master"}
-  "bap-callsites"
-  "bap-taint-propagator"
+  "bap-std" {= "master"}
+  "bap-callsites" {= "master"}
+  "bap-taint-propagator" {= "master"}
 ]
 synopsis:
   "A verification framework for detecting vulnerability patterns in binaries"

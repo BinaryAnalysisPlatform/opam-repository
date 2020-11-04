@@ -18,12 +18,12 @@ depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "ppx_jane" {>= "v0.12" & < "v0.13"}
   "bap-std" {= "master"}
-  "bap-future"
-  "monads"
-  "bitvec"
-  "bitvec-order"
-  "ogre"
-  "bap-main"
+  "bap-future" {= "master"}
+  "monads" {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-order" {= "master"}
+  "ogre" {= "master"}
+  "bap-main" {= "master"}
 ]
 synopsis: "Controls the BIL transformation pipeline"
 url {

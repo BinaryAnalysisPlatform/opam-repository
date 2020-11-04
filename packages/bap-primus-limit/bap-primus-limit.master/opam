@@ -20,7 +20,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus-limit"]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-primus"
+  "bap-primus" {= "master"}
 ]
 synopsis: "Ensures termination by limiting Primus machines"
 url {

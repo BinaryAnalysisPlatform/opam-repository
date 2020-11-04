@@ -17,7 +17,7 @@ remove: [["ocamlfind" "remove" "bitvec-sexp"]]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "oasis" {build & >= "0.4.7"}
-  "bitvec"
+  "bitvec" {= "master"}
   "sexplib0"
 ]
 synopsis: "Sexp serializers for Bitvec"

@@ -25,12 +25,12 @@ remove: [
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "conf-ida"
-  "bap-ida-python" {>= "1.5.0"}
+  "bap-ida-python" {= "master"}
   "core_kernel" {>= "v0.12" & < "v0.13"}
   "oasis" {build & >= "0.4.7"}
   "fileutils"
   "re"
-  "bap-ida-plugin"
+  "bap-ida-plugin" {= "master"}
 ]
 synopsis: "An IDA Pro integration library"
 url {

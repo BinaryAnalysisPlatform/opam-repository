@@ -9,15 +9,15 @@ dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 
 depends: [
-  "bap-primus-exploring-scheduler"
-  "bap-primus-greedy-scheduler"
-  "bap-primus-limit"
-  "bap-primus-loader"
-  "bap-primus-mark-visited"
-  "bap-primus-print"
-  "bap-primus-promiscuous"
-  "bap-primus-round-robin-scheduler"
-  "bap-primus-wandering-scheduler"
+  "bap-primus-exploring-scheduler" {= "master"}
+  "bap-primus-greedy-scheduler" {= "master"}
+  "bap-primus-limit" {= "master"}
+  "bap-primus-loader" {= "master"}
+  "bap-primus-mark-visited" {= "master"}
+  "bap-primus-print" {= "master"}
+  "bap-primus-promiscuous" {= "master"}
+  "bap-primus-round-robin-scheduler" {= "master"}
+  "bap-primus-wandering-scheduler" {= "master"}
 ]
 synopsis: "Provides supporting components for Primus"
 url {

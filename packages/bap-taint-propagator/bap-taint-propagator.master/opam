@@ -18,7 +18,7 @@ depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
   "cmdliner"
-  "bap-microx"
+  "bap-microx" {= "master"}
 ]
 synopsis: "BAP Taint propagation engine using based on microexecution"
 url {

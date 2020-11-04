@@ -23,9 +23,9 @@ remove: [
 
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "core-lwt"
-  "regular"
-  "bap"
+  "core-lwt" {= "master"}
+  "regular" {= "master"}
+  "bap" {= "master"}
   "cohttp" {>= "1.0.0" & < "2.0.0"}
   "cohttp-lwt" {>= "1.0.0" & < "2.0.0"}
   "cohttp-lwt-unix" {>= "1.0.0" & < "2.0.0"}

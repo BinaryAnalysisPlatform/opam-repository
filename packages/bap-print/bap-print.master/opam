@@ -23,8 +23,8 @@ remove: [
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-demangle"
-  "text-tags"
+  "bap-demangle" {= "master"}
+  "text-tags" {= "master"}
 ]
 synopsis: "Print plugin - print project in various formats"
 url {

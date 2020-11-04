@@ -33,7 +33,7 @@ depends: [
   "bap-knowledge" {= "master"}
   "bitvec" {= "master"}
   "bitvec-order" {= "master"}
-  "bap-core-theory"  {= "master"}
+  "bap-core-theory" {= "master"}
   "bap-bundle" {= "master"}
   "bap-main" {= "master"}
   "bap-plugins" {= "master"}
@@ -46,14 +46,14 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "ocamlfind" {>= "1.5.6" & < "2.0"}
   "ppx_jane" {>= "v0.12" & < "v0.13"}
-  "regular"
+  "regular" {= "master"}
   "uri"
   "utop" {build & >= "2.0.0"}
   "uuidm"
   "zarith"
   "cmdliner" {>= "0.9.8"}
-  "ogre"
-  "monads"
+  "ogre" {= "master"}
+  "monads" {= "master"}
   "result"
 ]
 depexts: [

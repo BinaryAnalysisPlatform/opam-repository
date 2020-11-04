@@ -33,8 +33,8 @@ depends: [
   "cmdliner"
   "conf-env-travis"
   "conf-bap-llvm" {= "master"}
-  "ogre"
-  "monads"
+  "ogre" {= "master"}
+  "monads" {= "master"}
 ]
 depexts: [
   ["clang" "libncurses5-dev"] {os-distribution = "ubuntu"}

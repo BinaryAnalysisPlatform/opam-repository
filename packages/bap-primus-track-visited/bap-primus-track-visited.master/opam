@@ -20,7 +20,7 @@ remove: [ ["ocamlfind" "remove" "bap-primus_track_visited"] ]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-primus"
+  "bap-primus" {= "master"}
 ]
 synopsis: "Tracks basic blocks visited by Primus"
 url {

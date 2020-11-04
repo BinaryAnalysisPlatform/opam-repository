@@ -22,7 +22,7 @@ remove: [
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
-  "bap-demangle"
+  "bap-demangle" {= "master"}
   "conf-binutils" {= "0.3"}
 ]
 synopsis: "A demangler that relies on a c++filt utility"

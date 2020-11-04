@@ -23,7 +23,7 @@ depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
   "bap-primus" {= "master"}
-  "bap-x86"
+  "bap-x86" {= "master"}
 ]
 synopsis: "The x86 CPU support package for BAP Primus CPU emulator"
 url {

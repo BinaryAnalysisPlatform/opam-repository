@@ -23,7 +23,7 @@ depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "bap-std" {= "master"}
   "bap-primus" {= "master"}
-  "bap-taint"
+  "bap-taint" {= "master"}
 ]
 synopsis: "A compatibility layer between different taint analysis frameworks"
 url {

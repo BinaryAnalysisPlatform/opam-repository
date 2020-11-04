@@ -19,7 +19,7 @@ remove: [
 ]
 depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
-  "bap"
+  "bap" {= "master"}
   "cmdliner"
 ]
 synopsis: "Plugins for IDA and BAP integration"

@@ -29,7 +29,7 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "bap-std" {= "master"}
   "cmdliner"
-  "text-tags"
+  "text-tags" {= "master"}
   "ocamlgraph"
   "ezjsonm"
 ]

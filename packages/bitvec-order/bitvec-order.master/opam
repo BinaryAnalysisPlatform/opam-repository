@@ -17,8 +17,8 @@ depends: [
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "oasis" {build & >= "0.4.7"}
   "base"
-  "bitvec"
-  "bitvec-sexp"
+  "bitvec" {= "master"}
+  "bitvec-sexp" {= "master"}
 ]
 synopsis: "Base style comparators and orders for Bitvec"
 url {
