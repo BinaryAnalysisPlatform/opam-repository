@@ -24,6 +24,7 @@ depends: [
   "core_kernel" {>= "v0.12" & < "v0.13"}
   "ocaml" {>= "4.07.0" & < "4.10.0"}
   "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ounit"
   "bap-abi" {= "master"}
   "bap-core-theory" {= "master"}
   "bap-knowledge" {= "master"}
