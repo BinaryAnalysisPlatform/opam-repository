@@ -33,3 +33,6 @@ ppx_bap is the set of blessed ppx rewriters used in BAP projects.
 It fills the same role as ppx_base or ppx_jane (from which it is derived),
 but doesn't impose any style requirements and has only the minimal necessary
 set of rewriters."
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/ppx_bap#master"
+}
