@@ -14,14 +14,14 @@ build: [
 install: [[make "install"]]
 remove: [["ocamlfind" "remove" "bap-main"] ]
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "base"
   "stdio"
   "cmdliner"
-  "bap-build"   {= "master"}
-  "bap-future"  {= "master"}
+  "bap-build" {= "master"}
+  "bap-future" {= "master"}
   "bap-plugins" {= "master"}
-  "bap-recipe"  {= "master"}
+  "bap-recipe" {= "master"}
 ]
 synopsis: "Build BAP Main Framework Configuration Library"
 description:

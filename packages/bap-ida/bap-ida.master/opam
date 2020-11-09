@@ -23,7 +23,7 @@ remove: [
         ["bapbundle" "remove" "ida.plugin"]
 ]
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "conf-ida"
   "bap-ida-python" {= "master"}
   "core_kernel" {>= "v0.12" & < "v0.13"}

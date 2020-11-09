@@ -18,7 +18,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-callgraph_collator"]
          ["bapbundle" "remove" "callgraph_collator.plugin"]]
 
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "bap-std" {= "master"}
   "bap-main" {= "master"}
   "graphlib" {= "master"}

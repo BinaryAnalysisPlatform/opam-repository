@@ -17,7 +17,7 @@ install: [[make "install"]]
 remove: [["ocamlfind" "remove" "bap-primus"]]
 
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "bap-std" {= "master"}
   "bap-abi" {= "master"}
   "bap-c" {= "master"}

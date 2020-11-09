@@ -17,7 +17,7 @@ install: [[make "install"]]
 remove: [["rm" "-f" "%{bin}%/bap-byteweight"]]
 
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "bap-std" {= "master"}
   "bap-ida" {= "master"}
   "bap-byteweight-frontend" {= "master"}

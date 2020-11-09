@@ -16,10 +16,9 @@ remove: [["ocamlfind" "remove" "bap-plugin-analyze"]
          ["bapbundle" "remove" "analyze.plugin"]
          ]
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "bap-std" {= "master"}
   "linenoise" {>= "1.1.0" & < "2.0.0"}
-
 ]
 synopsis: "Implements the analyze command"
 description: """

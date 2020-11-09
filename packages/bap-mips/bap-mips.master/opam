@@ -18,7 +18,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-mips"]
          ["bapbundle" "remove" "mips.plugin"]]
 
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.12" & < "v0.13"}
   "ppx_jane" {>= "v0.12" & < "v0.13"}
   "zarith"

@@ -15,7 +15,9 @@ install: [
 remove: [["rm" "%{share}%/bap/sigs.zip"]]
 synopsis: "A data package with binary signatures for bap"
 description: "A package contains signatures for Byteweight algorithm."
-depends: ["ocaml"]
+depends: [
+  "ocaml" {>= "4.08.0" & < "4.12.0"}
+]
 flags: light-uninstall
 url {
   src:

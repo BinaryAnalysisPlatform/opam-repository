@@ -17,7 +17,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-beagle"]
          ["bapbundle" "remove" "beagle.plugin"]
          ]
 depends: [
-  "ocaml" {>= "4.07.0" & < "4.10.0"}
+  "ocaml" {>= "4.08.0" }
   "bap-std" {= "master"}
   "cmdliner"
   "bap-microx" {= "master"}
