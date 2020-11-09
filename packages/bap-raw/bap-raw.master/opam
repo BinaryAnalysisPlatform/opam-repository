@@ -18,7 +18,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-raw"]
 depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.12" & < "v0.13"}
-  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ppx_bap" {= "master"}
   "bap-std" {= "master"}
   "bap-main" {= "master"}
 ]

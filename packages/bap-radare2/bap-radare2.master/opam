@@ -21,7 +21,7 @@ depends: [
   "conf-radare2"
   "core_kernel" {>= "v0.12" & < "v0.13"}
   "ocaml" {>= "4.08.0" }
-  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ppx_bap" {= "master"}
   "re"
   "yojson"
   "zarith"

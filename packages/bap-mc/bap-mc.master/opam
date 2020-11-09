@@ -28,7 +28,7 @@ remove: [
 depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.12" & < "v0.13"}
-  "ppx_jane" {>= "v0.12" & < "v0.13"}
+  "ppx_bap" {= "master"}
   "oasis" {build & >= "0.4.7"}
   "bap-core-theory" {= "master"}
   "bap-knowledge" {= "master"}
