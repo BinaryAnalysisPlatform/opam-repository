@@ -20,7 +20,7 @@ remove: [
         ]
 
 depends: [
-  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
   "ocaml" {>= "4.08.0" }
   "ppx_bap" {= "master"}
   "bap-abi" {= "master"}

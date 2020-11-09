@@ -28,7 +28,7 @@ depends: [
   "oasis" {build & >= "0.4.7"}
   "bap-std" {= "master"}
   "cmdliner"
-  "parsexp" {>= "v0.12" & < "v0.13"}
+  "parsexp" {>= "v0.14" & < "v0.15"}
 ]
 synopsis: "BAP frontend"
 description: "The command-line interface to the Binary Analysis Platform."

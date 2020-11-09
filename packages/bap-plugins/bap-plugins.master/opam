@@ -16,7 +16,7 @@ remove: [["ocamlfind" "remove" "bap-plugins"]
          ]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
   "cmdliner"
   "fileutils"
   "bap-bundle" {= "master"}

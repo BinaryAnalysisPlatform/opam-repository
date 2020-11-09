@@ -26,7 +26,7 @@ depends: [
   "monads" {= "master"}
   "uuidm"
   "graphlib" {= "master"}
-  "parsexp" {>= "v0.12" & < "v0.13"}
+  "parsexp" {>= "v0.14" & < "v0.15"}
 ]
 synopsis: "The BAP Microexecution Framework"
 description: """

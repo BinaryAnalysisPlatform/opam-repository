@@ -24,7 +24,7 @@ depends: [
   "bap-primus" {= "master"}
   "bap-primus-track-visited" {= "master"}
   "bitvec" {= "master"}
-  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
   "monads" {= "master"}
   "ppx_bap" {= "master"}
   "regular" {= "master"}

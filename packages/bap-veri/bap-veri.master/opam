@@ -27,8 +27,8 @@ depends: [
   "oasis" {build}
   "ounit"
   "pcre"
-  "core_kernel" {>= "v0.12" & < "v0.13"}
-  "textutils" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "textutils" {>= "v0.14" & < "v0.15"}
   "uri"
 ]
 synopsis: "BAP Instruction Semantics Verification Tool"

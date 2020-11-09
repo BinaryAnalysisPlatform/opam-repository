@@ -29,7 +29,7 @@ depends: [
   "cohttp" {>= "1.0.0" & < "2.0.0"}
   "cohttp-lwt" {>= "1.0.0" & < "2.0.0"}
   "cohttp-lwt-unix" {>= "1.0.0" & < "2.0.0"}
-  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
   "ezjsonm" {= "0.5.0"}
   "lwt" {>= "4.0.0" & < "5.0.0"}
   "lwt_log"

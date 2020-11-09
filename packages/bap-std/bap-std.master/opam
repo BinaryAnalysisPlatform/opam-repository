@@ -39,8 +39,8 @@ depends: [
   "bap-plugins" {= "master"}
   "bap-relation" {= "master"}
   "camlzip" {>= "1.07"}
-  "core_kernel" {>= "v0.12" & < "v0.13"}
-  "bin_prot" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "bin_prot" {>= "v0.14" & < "v0.15"}
   "fileutils"
   "graphlib" {= "master"}
   "oasis" {build & >= "0.4.7"}

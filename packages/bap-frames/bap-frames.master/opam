@@ -37,7 +37,7 @@ remove: [
 depends: [
   "ocaml" {>= "4.08.0" }
   "oasis" {build & >= "0.4.7"}
-  "core_kernel" {>= "v0.12" & < "v0.13"}
+  "core_kernel" {>= "v0.14" & < "v0.15"}
   "ppx_bap" {= "master"}
   "bap-std" {= "master"}
   "bap-traces" {= "master"}
