@@ -70,11 +70,13 @@ depends: [
   "bap-strings" {= "master"}
   "bap-stub-resolver" {= "master"}
   "bap-symbol-reader" {= "master"}
+  "bap-systemz"       {= "master"}
   "bap-taint" {= "master"}
   "bap-taint-propagator" {= "master"}
   "bap-term-mapper" {= "master"}
   "bap-trace" {= "master"}
   "bap-traces" {= "master"}
+  "bap-thumb" {= "master"}
   "bap-trivial-condition-form" {= "master"}
   "bap-warn-unused" {= "master"}
   "bap-x86" {= "master"}
