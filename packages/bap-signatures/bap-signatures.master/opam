@@ -9,11 +9,11 @@ dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 install: [
   ["mkdir" "-p" "%{share}%/bap/"]
-  ["cp" "sigs.zip" "%{share}%/bap/sigs.zip"]
+  ["cp" "sigs.zip" "%{share}%/bap/signatures/byteweight.zip"]
 ]
 
-remove: [["rm" "%{share}%/bap/sigs.zip"]]
-synopsis: "A data package with binary signatures for bap"
+remove: [["rm" "%{share}%/bap/signatures/byteweight.zip"]]
+synopsis: "A data package with binary signatures for BAP"
 description: "A package contains signatures for Byteweight algorithm."
 depends: [
   "ocaml" {>= "4.08.0" & < "4.12.0"}
