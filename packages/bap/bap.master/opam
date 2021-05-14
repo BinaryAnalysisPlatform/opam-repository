@@ -27,6 +27,7 @@ depends: [
   "bap-callsites" {= "master"}
   "bap-constant-tracker" {= "master"}
   "bap-demangle" {= "master"}
+  "bap-dependencies" {= "master"}
   "bap-disassemble" {= "master"}
   "bap-dump-symbols" {= "master"}
   "bap-elementary" {= "master"}
