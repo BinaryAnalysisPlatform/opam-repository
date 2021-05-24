@@ -1,0 +1,44 @@
+opam-version: "2.0"
+name: "bap-riscv"
+version: "master"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
+license: "MIT"
+build: [
+  ["./configure" "--prefix=%{prefix}%" "--enable-riscv"]
+  [make]
+]
+
+install: [[make "install"]]
+
+remove: [
+        ["ocamlfind" "remove" "bap-riscv"]
+        ["ocamlfind" "remove" "bap-plugin-riscv"]
+        ["bapbundle"   "remove" "riscv.plugin"]
+
+]
+
+depends: [
+  "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {= "master"}
+  "ogre" {= "master"}
+  "monads" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-main" {= "master"}
+  "bap-std" {= "master"}
+  "bap-abi" {= "master"}
+  "bap-api" {= "master"}
+  "bap-c" {= "master"}
+]
+synopsis: "BAP RISCV lifter and disassembler"
+description: """
+Provides semantics for RISCV instructions, disassembler, and partial
+support for the gnueabi ABI"""
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+}
