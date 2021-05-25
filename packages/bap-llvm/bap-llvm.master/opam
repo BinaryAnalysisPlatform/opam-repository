@@ -34,7 +34,7 @@ depends: [
   "bap-std" {= "master"}
   "mmap"
   "conf-env-travis"
-  "conf-bap-llvm" {= "master"}
+  "conf-bap-llvm"
   "ogre" {= "master"}
   "monads" {= "master"}
 ]
