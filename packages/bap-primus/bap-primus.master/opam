@@ -19,16 +19,21 @@ remove: [["ocamlfind" "remove" "bap-primus"]]
 depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.14" & < "v0.15"}
+  "parsexp" {>= "v0.14" & < "v0.15"}
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-abi" {= "master"}
   "bap-c" {= "master"}
   "bap-future" {= "master"}
   "bap-strings" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bitvec" {= "master"}
+  "bitvec-binprot" {= "master"}
+  "regular" {= "master"}
   "monads" {= "master"}
-  "uuidm"
   "graphlib" {= "master"}
-  "parsexp" {>= "v0.14" & < "v0.15"}
+  "uuidm"
 ]
 synopsis: "The BAP Microexecution Framework"
 description: """

@@ -30,7 +30,9 @@ depends: [
   "monads" {= "master"}
   "regular" {= "master"}
   "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
   "bap-main" {= "master"}
+  "bitvec" {= "master"}
 
 ]
 synopsis: "BAP Primus Lisp Runtime"

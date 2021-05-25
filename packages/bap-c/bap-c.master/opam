@@ -18,7 +18,10 @@ depends: [
   "core_kernel" {>= "v0.14" & < "v0.15"}
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
+  "bap-abi" {= "master"}
   "bap-api" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
 ]
 synopsis: "A C language support library for BAP"
 flags: light-uninstall

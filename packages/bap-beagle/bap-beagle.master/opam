@@ -23,7 +23,6 @@ depends: [
   "bap-std" {= "master"}
   "regular" {= "master"}
   "monads"  {= "master"}
-  "cmdliner"
   "bap-microx" {= "master"}
   "bap-primus" {= "master"}
   "bap-strings" {= "master"}

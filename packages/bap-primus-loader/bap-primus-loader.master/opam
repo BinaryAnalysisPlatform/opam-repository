@@ -23,6 +23,7 @@ depends: [
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-primus" {= "master"}
+  "bap-core-theory" {= "master"}
   "ogre" {= "master"}
 ]
 synopsis: "Generic program loader for Primus"

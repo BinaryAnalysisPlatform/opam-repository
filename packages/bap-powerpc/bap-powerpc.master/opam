@@ -14,7 +14,8 @@ build: [
 
 install: [[make "install"]]
 
-remove: [["ocamlfind" "remove" "bap-plugin-powerpc"]
+remove: [["ocamlfind" "remove" "bap-powerpc"]
+         ["ocamlfind" "remove" "bap-plugin-powerpc"]
          ["bapbundle" "remove" "powerpc.plugin"]]
 
 depends: [
