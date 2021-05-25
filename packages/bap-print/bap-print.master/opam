@@ -22,9 +22,17 @@ remove: [
 
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-demangle" {= "master"}
   "text-tags" {= "master"}
+  "bap-core-theory" {= "master"}
+  "regular" {= "master"}
+  "graphlib" {= "master"}
+  "re"
+  "ogre" {= "master"}
+  "bap-knowledge" {= "master"}
 ]
 synopsis: "Print plugin - print project in various formats"
 url {

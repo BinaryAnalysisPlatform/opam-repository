@@ -26,9 +26,12 @@ remove: [[ "ocamlfind" "remove" "bap-plugin-map_terms"]
 
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "oasis" {build & >= "0.4.7"}
   "bap-std" {= "master"}
-  "cmdliner"
+  "bap-main" {= "master"}
+  "regular" {= "master"}
 ]
 synopsis: "A BAP DSL for mapping program terms"
 url {

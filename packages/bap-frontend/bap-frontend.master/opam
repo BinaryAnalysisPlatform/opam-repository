@@ -25,10 +25,15 @@ remove: [
 
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "oasis" {build & >= "0.4.7"}
   "bap-std" {= "master"}
-  "cmdliner"
-  "parsexp" {>= "v0.14" & < "v0.15"}
+  "bap-main" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-knowledge" {= "master"}
+  "regular" {= "master"}
+  "ocamlfind"
 ]
 synopsis: "BAP frontend"
 description: "The command-line interface to the Binary Analysis Platform."

@@ -18,11 +18,14 @@ remove: [["rm" "-f" "%{bin}%/bap-byteweight"]]
 
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-byteweight" {= "master"}
   "cmdliner"
   "ocurl"
   "fileutils"
+  "ocamlfind"
   "re"
 ]
 synopsis: "BAP Toolkit for training and controlling Byteweight algorithm"

@@ -18,11 +18,16 @@ remove: [["ocamlfind" "remove" "bap-plugin-beagle"]
          ]
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
+  "regular" {= "master"}
+  "monads"  {= "master"}
   "cmdliner"
   "bap-microx" {= "master"}
   "bap-primus" {= "master"}
   "bap-strings" {= "master"}
+  "bap-future" {= "master"}
 ]
 synopsis: "BAP obfuscated string solver"
 description: """

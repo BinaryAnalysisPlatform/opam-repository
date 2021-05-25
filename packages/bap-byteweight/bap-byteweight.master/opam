@@ -25,8 +25,13 @@ remove: [
 
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-signatures" {= "master"}
+  "regular" {= "master"}
+  "camlzip"
+  "uri"
 ]
 synopsis: "BAP facility for indentifying code entry points"
 description: """

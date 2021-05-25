@@ -17,7 +17,14 @@ remove: [["ocamlfind" "remove" "bap-plugin-analyze"]
          ]
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
+  "monads"  {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-main" {= "master"}
+  "bitvec" {= "master"}
   "linenoise" {>= "1.1.0" & < "2.0.0"}
 ]
 synopsis: "Implements the analyze command"

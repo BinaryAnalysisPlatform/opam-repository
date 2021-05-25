@@ -24,13 +24,18 @@ remove: [
 ]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "conf-ida"
-  "bap-ida-python" {= "master"}
   "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
+  "conf-ida"
   "oasis" {build & >= "0.4.7"}
   "fileutils"
+  "mmap"
   "re"
+  "bap-ida-python" {= "master"}
   "bap-ida-plugin" {= "master"}
+  "bap-knowledge" {= "master"}
+  "regular" {= "master"}
+  "bap-future" {= "master"}
 ]
 synopsis: "An IDA Pro integration library"
 url {

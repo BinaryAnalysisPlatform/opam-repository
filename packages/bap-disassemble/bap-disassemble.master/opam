@@ -17,7 +17,16 @@ remove: [["ocamlfind" "remove" "bap-plugin-disassemble"]
          ]
 depends: [
   "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "regular" {= "master"}
+  "monads" {= "master"}
+  "bap-plugins" {= "master"}
+  "bap-bundle" {= "master"}
+  "bap-main" {= "master"}
 ]
 synopsis: "Implements the disassemble command"
 description: """
