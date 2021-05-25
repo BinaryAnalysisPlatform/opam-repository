@@ -26,7 +26,7 @@ depends: [
   "bitvec" {= "master"}
   "core_kernel" {>= "v0.14" & < "v0.15"}
   "monads" {= "master"}
-  "ppx_bap" {= "master"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "regular" {= "master"}
   "zarith"
   "z3"

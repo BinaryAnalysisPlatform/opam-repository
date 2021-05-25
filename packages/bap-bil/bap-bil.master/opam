@@ -16,7 +16,7 @@ remove: [["ocamlfind" "remove" "bap-plugin-bil"]
          ["bapbundle" "remove" "bil.plugin"]]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "ppx_bap" {= "master"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-future" {= "master"}
   "monads" {= "master"}
