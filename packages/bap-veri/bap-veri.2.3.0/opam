@@ -1,0 +1,45 @@
+opam-version: "2.0"
+name: "bap-veri"
+version: "2.3.0"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap-veri/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap-veri/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap-veri/"
+license: "MIT"
+
+build: [
+  [make]
+]
+
+install: [[make "install"]]
+
+remove: [
+  ["ocamlfind" "remove" "bap-veri"]
+  ["rm" "-f" "%{bin}%/bap-veri"]
+]
+
+depends: [
+  "ocaml" {>= "4.08.0" }
+  "bap-std" {= "2.3.0"}
+  "bap-traces" {= "2.3.0"}
+  "cmdliner"
+  "oasis" {build}
+  "ounit"
+  "pcre"
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "textutils" {>= "v0.14" & < "v0.15"}
+  "uri"
+]
+synopsis: "BAP Instruction Semantics Verification Tool"
+description: """
+Verifies that our understaning of instruction semantics is correct, or
+at least the same as in QEMU by checking if our execution bisimulates
+the QEMU."""
+flags: light-uninstall
+
+url {
+  src: "https://github.com/BinaryAnalysisPlatform/bap-veri/archive/v2.3.0.tar.gz"
+  checksum: "md5=3be7b8b182ccd96e48989b4e57311193"
+  mirrors: "https://mirrors.aegis.cylab.cmu.edu/bap/2.3.0/v2.3.0.tar.gz"
+}
