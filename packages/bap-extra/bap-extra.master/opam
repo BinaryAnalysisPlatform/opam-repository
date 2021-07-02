@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap"
+name: "bap-extra"
 version: "master"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,32 +8,14 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 
-
 depends: [
-  "ocaml" {>= "4.08.0" }
-  "bap-core" {= "master"}
-  "bap-beagle" {= "master"}
-  "bap-beagle-strings" {= "master"}
-  "bap-constant-tracker" {= "master"}
-  "bap-emacs-goodies"
-  "bap-microx" {= "master"}
-  "bap-primus-dictionary" {= "master"}
-  "bap-primus-powerpc" {= "master"}
-  "bap-primus-propagate-taint" {= "master"}
-  "bap-primus-random" {= "master"}
-  "bap-primus-region" {= "master"}
-  "bap-primus-support" {= "master"}
-  "bap-primus-systems" {= "master"}
-  "bap-primus-taint" {= "master"}
-  "bap-primus-test" {= "master"}
-  "bap-primus-x86" {= "master"}
-  "bap-run" {= "master"}
-  "bap-strings" {= "master"}
-  "bap-taint" {= "master"}
-  "bap-taint-propagator" {= "master"}
-  "bap-term-mapper" {= "master"}
-  "bap-trivial-condition-form" {= "master"}
-  "bap-warn-unused" {= "master"}
+  "bap" {= "master"}
+  "bap-elf" {= "master"}
+  "bap-primus-symbolic-executor" {= "master"}
+  "bap-ghidra" {= "master"}
+  "bap-trace" {= "master"}
+  "bap-traces" {= "master"}
+
 ]
 synopsis: "Binary Analysis Platform"
 description: """
@@ -50,8 +32,7 @@ in OCaml and it is the preferred language to write analysis, but we
 have bindings to C, Python and Rust. The Primus Framework also provide
 a Lisp-like DSL for writing program analysis tools.
 
-This is a meta package that installs the default set of BAP packages,
-See also [bap-extra]."""
+This is a meta package that installs essential parts of BAP."""
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
