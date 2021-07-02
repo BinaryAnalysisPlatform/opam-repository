@@ -29,7 +29,7 @@ depends: [
   "core_kernel" {>= "v0.14" & < "v0.15"}
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
-  "ba-main" {= "master"}
+  "bap-main" {= "master"}
 ]
 
 synopsis: "BAP Ghidra backend"
