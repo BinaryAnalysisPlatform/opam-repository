@@ -1,0 +1,40 @@
+opam-version: "2.0"
+name: "bap-ghidra"
+version: "master"
+maintainer: "Ivan Gotovchits <ivg@ieee.org>"
+authors: "BAP Team"
+homepage: "https://github.com/BinaryAnalysisPlatform/bap/"
+bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
+dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
+license: "MIT"
+build: [
+  ["./configure"
+  "--prefix=%{prefix}%"
+  "--enable-ghidra"]
+  [make]
+  ]
+
+install: [
+  [make "install"]
+]
+
+remove: [
+  ["ocamlfind" "remove" "bap-plugin-ghidra"]
+  ["ocamlfind" "remove" "bap-ghidra"]
+  ["bapbundle" "remove" "ghidra.plugin"]
+]
+
+depends: [
+  "ocaml" {>= "4.08.0" }
+  "core_kernel" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.15"}
+  "bap-std" {= "master"}
+  "ba-main" {= "master"}
+]
+
+synopsis: "BAP Ghidra backend"
+description:
+  "Provides the lifter and disassembler based on Ghidra Sleigh disassembler."
+url {
+  src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
+}
