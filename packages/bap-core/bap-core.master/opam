@@ -28,6 +28,7 @@ depends: [
   "bap-disassemble" {= "master"}
   "bap-dump-symbols" {= "master"}
   "bap-elementary" {= "master"}
+  "bap-flatten" {= "master"}
   "bap-frontend" {= "master"}
   "bap-frontc" {= "master"}
   "bap-glibc-runtime" {= "master"}
