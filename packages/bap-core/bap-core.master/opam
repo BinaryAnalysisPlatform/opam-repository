@@ -38,6 +38,7 @@ depends: [
   "bap-mips" {= "master"}
   "bap-objdump" {= "master"}
   "bap-optimization" {= "master"}
+  "bap-patterns" {= "master"}
   "bap-plugins" {= "master"}
   "bap-powerpc" {= "master"}
   "bap-primus" {= "master"}
