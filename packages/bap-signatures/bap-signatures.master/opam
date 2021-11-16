@@ -10,6 +10,7 @@ license: "MIT"
 install: [
   ["mkdir" "-p" "%{share}%/bap/signatures/"]
   ["cp" "sigs.zip" "%{share}%/bap/signatures/byteweight.zip"]
+  ["cp" "-r" "Ghidra" "%{share}%/bap/signatures/"]
 ]
 
 remove: [["rm" "-f" "%{share}%/bap/signatures/byteweight.zip"]]
@@ -21,5 +22,6 @@ depends: [
 flags: light-uninstall
 url {
   src:
-    "https://github.com/BinaryAnalysisPlatform/bap/releases/latest/download/sigs.tar.gz"
+    "https://github.com/BinaryAnalysisPlatform/bap/releases/download/v2.4.0-alpha/sigs.tar.gz"
+  checksum: "md5=04e2ebb1b30d2d12bf2ceb240544044f"
 }
