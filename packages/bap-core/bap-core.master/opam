@@ -58,6 +58,7 @@ depends: [
   "bap-symbol-reader" {= "master"}
   "bap-systemz"       {= "master"}
   "bap-thumb" {= "master"}
+  "bap-toplevel" {= "master"}
   "bap-x86" {= "master"}
 ]
 synopsis: "Binary Analysis Platform"
