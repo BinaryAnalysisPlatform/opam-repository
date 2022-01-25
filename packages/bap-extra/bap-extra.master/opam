@@ -9,12 +9,13 @@ dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 
 depends: [
-  "bap" {= "master"}
+  "bap-byteweight-fronted" {= "master"}
   "bap-elf" {= "master"}
   "bap-primus-symbolic-executor" {= "master"}
   "bap-ghidra" {= "master"}
   "bap-trace" {= "master"}
   "bap-traces" {= "master"}
+  "bap-radare2" {= "master"}
 
 ]
 synopsis: "Binary Analysis Platform"
