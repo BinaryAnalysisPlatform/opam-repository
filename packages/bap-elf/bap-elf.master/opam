@@ -27,7 +27,7 @@ depends: [
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "bap-std" {= "master"}
   "bap-dwarf" {= "master"}
-  "bitstring" {>= "4.0.0" & < "5.0.0"}
+  "ppx_bitstring" {>= "4.0.0" & < "5.0.0"}
 ]
 synopsis: "BAP ELF parser and loader written in native OCaml"
 url {
