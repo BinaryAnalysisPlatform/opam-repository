@@ -9,6 +9,7 @@ dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 
 depends: [
+  "bap" {= "master"}
   "bap-byteweight-frontend" {= "master"}
   "bap-elf" {= "master"}
   "bap-primus-symbolic-executor" {= "master"}
