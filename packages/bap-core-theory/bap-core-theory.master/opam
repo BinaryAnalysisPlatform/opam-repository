@@ -18,6 +18,7 @@ depends: [
   "core_kernel" {>= "v0.14" & < "v0.15"}
   "ppx_bap" {>= "v0.14" & < "v0.15"}
   "oasis" {build & >= "0.4.7"}
+  "bap-build"
   "bap-knowledge" {= "master"}
   "bap-main" {= "master"}
   "bitvec" {= "master"}
