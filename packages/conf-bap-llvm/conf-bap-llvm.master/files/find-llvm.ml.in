@@ -1,7 +1,7 @@
 open Printf
 open StdLabels
 
-let versions = ["10.0"; "9.0"; "8.0"; "7.0"; "6.0";]
+let versions = ["14.0"; "13.0"; "12.0"; "11.0"; "10.0"; "9.0"; "8.0"; "7.0"; "6.0"]
 
 let (/) = Filename.concat
 
