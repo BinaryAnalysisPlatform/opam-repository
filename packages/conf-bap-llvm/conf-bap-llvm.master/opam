@@ -9,11 +9,13 @@ build: [
   ["ocaml" "unix.cma" "find-llvm.ml"]
 ]
 depends: [
-  "ocaml" {>= "4.08.0" & < "4.12.0"}
+  "ocaml" {>= "4.09.0" }
   "base-unix"
   "conf-which" {build}
 ]
 depexts: [
+  # kali
+  ["llvm-12-dev"] {os-distribution = "kali"}
 
   # debian
   ["llvm-6.0-dev"] {os-distribution = "debian" & os-version = "8"}       # jessie
@@ -42,7 +44,7 @@ flags: [ conf ]
 
 synopsis: "Checks that supported version of LLVM is installed"
 description: """
-Supported LLVM versions are: 6.0 7.0 8.0 9.0 10.0
+Supported LLVM versions are from 6.0 to 14.0, bounds including.
 
 A preferred llvm-config can be choosen by setting opam config variable:
 $: opam config set llvm-config your-llvm-config
