@@ -38,6 +38,7 @@ depends: [
   "bap-api" {= "master"}
   "bap-c" {= "master"}
   "bap-primus" {= "master"}
+  "bap-traces" {= "master"}
 ]
 synopsis: "BAP ARM lifter and disassembler"
 description: """
