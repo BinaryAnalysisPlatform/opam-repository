@@ -35,6 +35,7 @@ depends: [
   "bap-core-theory" {= "master"}
   "bap-future" {= "master"}
   "bap-knowledge" {= "master"}
+  "bap-primus" {= "master"}
   "bap-llvm" {= "master"}
   "bap-main" {= "master"}
   "bap-std" {= "master"}
