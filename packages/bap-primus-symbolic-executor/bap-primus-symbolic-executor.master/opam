@@ -19,15 +19,15 @@ remove: [["ocamlfind" "remove" "bap-plugin-primus_symbolic_executor"]
 
 depends: [
   "ocaml" {>= "4.08.0" }
-  "core_kernel" {>= "v0.14" & < "v0.15"}
-  "ppx_bap" {>= "v0.14" & < "v0.15"}
+  "core_kernel" {>= "v0.14" & < "v0.16"}
+  "ppx_bap" {>= "v0.14" & < "v0.16"}
   "bap-main" {= "master"}
   "bap-std" {= "master"}
   "bap-primus" {= "master"}
   "bap-primus-track-visited" {= "master"}
   "bitvec" {= "master"}
   "monads" {= "master"}
-  "ppx_bap" {>= "v0.14" & < "v0.15"}
+  "ppx_bap" {>= "v0.14" & < "v0.16"}
   "regular" {= "master"}
   "zarith"
   "z3" {>= "4.8.8-1" & < "4.8.13"}
