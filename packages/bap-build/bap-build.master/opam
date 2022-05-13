@@ -27,7 +27,7 @@ depends: [
   "ocamlbuild"
   "ocamlfind"
   "core_kernel" {>= "v0.14" & < "v0.16"}
-  "ppx_bap" {>= "v0.14" & < "v0.16"}
+  "ppx_bap"
 ]
 synopsis: "BAP build automation tools"
 

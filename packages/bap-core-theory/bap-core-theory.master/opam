@@ -16,7 +16,7 @@ remove: [["ocamlfind" "remove" "bap-core-theory"]]
 depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.14" & < "v0.16"}
-  "ppx_bap" {>= "v0.14" & < "v0.16"}
+  "ppx_bap"
   "oasis" {build & >= "0.4.7"}
   "bap-build"
   "bap-knowledge" {= "master"}
