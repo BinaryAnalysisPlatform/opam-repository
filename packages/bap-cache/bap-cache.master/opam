@@ -23,7 +23,7 @@ remove: [
 depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.14" & < "v0.16"}
-  "ppx_bap" {>= "v0.14" & < "v0.16"}
+  "ppx_bap"
   "bap-std" {= "master"}
   "regular" {= "master"}
   "bap-main" {= "master"}
