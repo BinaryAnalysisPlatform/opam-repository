@@ -24,10 +24,11 @@ depends: [
   "ocaml" {>= "4.08.0" }
   "core_kernel" {>= "v0.14" & < "v0.16"}
   "oasis" {build & >= "0.4.7"}
-  "bap-std" {= "master"}
-  "cmdliner"
+  "bap-knowledge" {= "master"}
+  "bap-core-theory" {= "master"}
+  "bap-main" {= "master"}
 ]
-synopsis: "Library for name demangling"
+synopsis: "Provides names service and demangling facilities"
 url {
   src: "git+https://github.com/BinaryAnalysisPlatform/bap#master"
 }
