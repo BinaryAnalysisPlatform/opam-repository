@@ -32,11 +32,11 @@ depends: [
   "bap-abi" {= "master"}
   "bap-api" {= "master"}
   "bap-c" {= "master"}
+  "bap-demangle" {= "master"}
   "bap-core-theory" {= "master"}
   "bap-future" {= "master"}
   "bap-knowledge" {= "master"}
   "bap-primus" {= "master"}
-  "bap-llvm" {= "master"}
   "bap-main" {= "master"}
   "bap-std" {= "master"}
 ]
