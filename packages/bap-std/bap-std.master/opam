@@ -55,6 +55,7 @@ depends: [
   "ogre" {= "master"}
   "monads" {= "master"}
   "result"
+  "mmap"
 ]
 depexts: [
   ["libgmp-dev" "libzip-dev" "clang"] {os-distribution = "ubuntu"}
