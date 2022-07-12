@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "ogre"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,27 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-ogre"]
   [make]
 ]
+
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+
+remove: [["ocamlfind" "remove" "ogre"]]
+
 depends: [
   "ocaml" {>= "4.08.0" }
-  "cmdliner"
+  "core_kernel" {>= "v0.14" & < "v0.16"}
+  "ppx_bap"
+  "oasis" {build & >= "0.4.7"}
+  "monads" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "Open Generic REpresentation NoSQL Database"
+description: """
+OGRE is a NoSQL document-style database, that uses s-exp for data
+representation and provides a type safe monadic interface for quering
+and updating documents."""
+flags: light-uninstall
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

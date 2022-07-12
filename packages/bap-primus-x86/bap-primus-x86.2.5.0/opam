@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bap-primus-x86"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,24 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-primus-x86"]
   [make]
 ]
+
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+
+remove: [
+        ["ocamlfind" "remove" "bap-plugin-primus_x86"]
+        ["bapbundle" "remove" "primus_x86.plugin"]
+        ]
+
 depends: [
   "ocaml" {>= "4.08.0" }
-  "cmdliner"
+  "bap-std" {= "2.5.0"}
+  "bap-primus" {= "2.5.0"}
+  "bap-x86" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "The x86 CPU support package for BAP Primus CPU emulator"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

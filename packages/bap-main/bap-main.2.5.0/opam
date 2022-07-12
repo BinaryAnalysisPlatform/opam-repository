@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bap-main"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,28 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-main"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+remove: [["ocamlfind" "remove" "bap-main"] ]
 depends: [
   "ocaml" {>= "4.08.0" }
+  "base"
+  "stdio"
   "cmdliner"
+  "bap-build" {= "2.5.0"}
+  "bap-future" {= "2.5.0"}
+  "bap-plugins" {= "2.5.0"}
+  "bap-recipe" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "Build BAP Main Framework Configuration Library"
+description:
+"""
+This library is an entry point to BAP and serves the two goals:
+- embedding BAP in other applications;
+- extending BAP with the user code.
+"""
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

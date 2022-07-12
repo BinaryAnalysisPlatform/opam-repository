@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bap-taint-propagator"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,19 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-propagate-taint"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+remove: [["ocamlfind" "remove" "bap-plugin-propagate_taint"]
+         ["bapbundle" "remove" "propagate_taint.plugin"]]
 depends: [
   "ocaml" {>= "4.08.0" }
+  "bap-std" {= "2.5.0"}
   "cmdliner"
+  "bap-microx" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "BAP Taint propagation engine using based on microexecution"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bap-recipe"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,24 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-recipe"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+remove: [["ocamlfind" "remove" "bap-recipe"]
+         ]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "cmdliner"
+  "oasis" {build & >= "0.4.7"}
+  "base"
+  "stdio"
+  "parsexp"
+  "fileutils"
+  "camlzip"
+  "uuidm"
+  "stdlib-shims"
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "Stores command line parameters and resources in a single file"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bitvec-order"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,19 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-bitvec-order"]
   [make]
 ]
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+remove: [["ocamlfind" "remove" "bitvec-order"]]
 depends: [
   "ocaml" {>= "4.08.0" }
-  "cmdliner"
+  "oasis" {build & >= "0.4.7"}
+  "base"
+  "bitvec" {= "2.5.0"}
+  "bitvec-sexp" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "Base style comparators and orders for Bitvec"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"

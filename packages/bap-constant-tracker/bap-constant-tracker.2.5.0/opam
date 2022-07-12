@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "bap-primus-machine"
+name: "bap-constant-tracker"
 version: "2.5.0"
 maintainer: "Ivan Gotovchits <ivg@ieee.org>"
 authors: "BAP Team"
@@ -8,16 +8,21 @@ bug-reports: "https://github.com/BinaryAnalysisPlatform/bap/issues"
 dev-repo: "git://github.com/BinaryAnalysisPlatform/bap/"
 license: "MIT"
 build: [
-  ["./configure" "--prefix=%{prefix}%" "--enable-primus-machine"]
+  ["./configure" "--prefix=%{prefix}%" "--enable-constant-tracker"]
   [make]
 ]
+
 install: [[make "install"]]
-remove: [["ocamlfind" "remove" "bap-primus-machine"]]
+
+remove: [["ocamlfind" "remove" "bap-plugin-constant_tracker"]
+         ["bapbundle" "remove" "constant_tracker.plugin"]]
+
 depends: [
   "ocaml" {>= "4.08.0" }
-  "cmdliner"
+  "bap-std" {= "2.5.0"}
+  "bap-primus" {= "2.5.0"}
 ]
-synopsis: "BAP bap-primus-machine library"
+synopsis: "Constant Tracking Analysis based on Primus"
 
 url {
   src: "https://github.com/BinaryAnalysisPlatform/bap/archive/v2.5.0.tar.gz"
