@@ -9,7 +9,7 @@ build: [
   ["ocaml" "unix.cma" "find-llvm.ml"]
 ]
 depends: [
-  "ocaml" {>= "4.09.0" }
+  "ocaml" {>= "4.08.0" }
   "base-unix"
   "conf-which" {build}
 ]
