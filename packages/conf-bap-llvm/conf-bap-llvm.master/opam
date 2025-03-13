@@ -33,7 +33,7 @@ depexts: [
 
   # macos
   ["llvm-6.0"] {os = "macos" & os-distribution = "macports"}
-  ["llvm@9"]   {os = "macos" & os-distribution = "homebrew"}
+  ["llvm@12"]   {os = "macos" & os-distribution = "homebrew"}
 
   # alpine
   ["llvm-dev" "llvm-static"] {os-distribution = "alpine"}
