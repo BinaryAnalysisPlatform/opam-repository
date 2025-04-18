@@ -27,6 +27,8 @@ depexts: [
   ["llvm-8-dev"]   {os-distribution = "ubuntu" & os-version = "16.04"} #xenial
   ["llvm-9-dev"]   {os-distribution = "ubuntu" & os-version = "18.04"} #bionic
   ["llvm-10-dev"]  {os-distribution = "ubuntu" & os-version = "20.04"} #focal
+  ["llvm-12-dev"]  {os-distribution = "ubuntu" & os-version = "22.04"} #focal
+  ["llvm-14-dev"]  {os-distribution = "ubuntu" & os-version = "24.04"} #noble
 
   # fedora
   ["llvm-devel" "llvm-static"] {os-distribution = "fedora"}
